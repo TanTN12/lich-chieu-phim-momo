@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 html {
     font-size: 62.5%;
@@ -9,6 +9,7 @@ html {
     font-family: 'Nunito',sans-serif;
     box-sizing: border-box;
 }
+
 .header-nav {
     height: 66px;
     border-bottom: 1px solid rgb(201, 198, 198);
@@ -21,6 +22,32 @@ html {
     width: 100%;
     z-index: 10;
 }
+
+.lopphu {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    display: none;
+    
+}
+.header-mobile-tablet {
+    display: none;
+    justify-content:space-between;
+    width: 820px;
+    align-items: center;
+    padding: 0 10px;
+}
+.list-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 .header-nav-container {
     display: flex;
     justify-content: space-between;
@@ -137,6 +164,7 @@ html {
 }
 .header-sub a{
     text-decoration: none;
+    color: var(--text-color);
 }
 .header-sub-home-icon {
     font-weight: 900;
@@ -154,14 +182,17 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 0px;
+    padding: 35px 0px;
 }
 .slider-nav-img {
     max-width: 100%;
+    margin: 20px 0;
 }
 .slider-nav-heading {
     font-size: 3.5rem;
     padding-bottom: 25px;
+    text-align: unset;
+    padding-top: unset;
 }
 .slider-heading-item {
     list-style: none;
@@ -185,14 +216,15 @@ html {
 /* Container */
 
 #container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
 }
 h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     padding: 61px 0 41px;
     text-align: center;
     color: var(--pink);
+    line-height: 3.3rem;
 }
 .content-lichchieuphim {
     border: 1px solid #ccc;
@@ -248,25 +280,30 @@ h2 {
 .allrap-item {
     width: 55px;
     margin-left: 16px;
+    font-size: 1.2rem;  
+    -webkit-tap-highlight-color: transparent
 }
 .allrap-item:first-child {
     margin: 0;
 }
 .allrap-item a {
     text-decoration: none;
+    
 }
 
 .allrap-item p {
+    color: var(--text-color);
     text-align: center;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
-    font-size: 1.2rem;
+ 
 }
 .allrap {
     display: flex;
     padding-bottom: 24px;
+    overflow-y: auto;
 }
 .allrap-item-img {
     width: 50px;
@@ -424,6 +461,7 @@ h3:hover {
     font-size: 2rem;
     color: var(--text-color);
     margin-top: -14px;
+    line-height: 2.4rem;
 }
 .container-blogphimanh-luotxem {
     display: flex;
@@ -522,9 +560,10 @@ h3:hover {
 .cauhoi a:hover{
     color: rgb(148, 147, 147);
 }
-.hadding-cauhoi h2{
+.heading-cauhoi h2{
     text-align: unset;
     padding-top: 100px;
+    line-height: 3.3rem;
 }
 
 
@@ -534,6 +573,7 @@ h3:hover {
 }
 .container-cachmuave-list {
     align-items: center;
+    
 }
 .img-giaodienmomo {
     height: 468px;
@@ -606,8 +646,11 @@ h3:hover {
 #footer {
     background-color:#262626;
 }
+.footer-list {
+    padding-top: 15px;
+}
 .footer-container {
-    padding: 35px 0;
+    padding: 25px 0;
     border-bottom: 1px solid rgb(68, 68, 68);
 }
 h4{
@@ -666,11 +709,12 @@ h4{
 
 
 .footer-nhanhang {
-    padding: 35px 0;
+    padding: 25px 0;
 }
 .footer-nhanhang-list {
     display: flex;
     align-items: center;
+    padding-top: 15px;
 }
 .footer-nhanhang-logomomo {
     max-width: 38px;
@@ -699,8 +743,12 @@ h4{
     font-size: 1.3rem;
     padding-top: 6px;
 }
+.footer-nhanhang-item-mangxahoi {
+    padding-top: 15px;
+}
 .footer-nhanhang-chungnhan {
     margin-left: auto;
+    padding-top: 15px;
 }
 .footer-nhanhang-chungnhan p {
     color: rgb(170, 170, 170);
@@ -708,3 +756,6 @@ h4{
     padding-bottom: 8px;
     
 }
+
+
+

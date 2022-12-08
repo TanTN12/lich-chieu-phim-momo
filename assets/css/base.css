@@ -8,7 +8,9 @@
     --pinkpatel:rgb(255, 236, 247);
     --hover-color:rgb(245, 245, 245);
 }
-
+#main {
+    overflow: hidden;
+}
 .btn {
     display: flex;
     align-items: center;
